@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>Create user</title>
+</head>
+<body>
+<form action="#" th:action="@{/car-update}" th:object="${car}" method="post">
+    <label for="id">ID</label>
+    <input readonly type="number" th:field="*{id}" id="id" placeholder="ID">
+    <br/>
+    <label for="model_of_car">First name</label>
+    <input type="text" th:field="*{model_of_car}" id="model_of_car" placeholder="Model of car">
+    <br/>
+    <label for="brand_car">brand car</label>
+    <input type="text" th:field="*{brand_car}" id="brand_car" placeholder="Brand car">
+    <input type="text" th:field="*{power}" id="power" placeholder="Power">
+    <input type="submit" value="create car">
+    <br/>
+    <input type="submit" value="Update car">
+</form>
+</body>
+</html>
